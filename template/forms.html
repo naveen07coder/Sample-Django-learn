@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+{% block title %}Form Page{% endblock %}
+{% block content %}
+    <h1>Form page</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="margin: 0 auto;">
+            <form method="GET" action="{% url 'sforms' %}">
+
+                  <div class="form-group">
+                    <label for="mytext">MyText</label>
+                    <input type="text" id="mytext" name = "mytext" class="form-control">
+                  </div>
+                <div class="form-group">
+                    <label for="mytext2">MyText2</label>
+                    <input type="text" id="mytext2" name = "mytext2" class="form-control">
+                  </div>
+
+<!--                <div class="form-group">-->
+<!--                    <label for="textarea">MyTextarea</label>-->
+<!--                    <textarea class="form-control" id="textarea" name = "mytextarea" rows="3"></textarea>-->
+<!--                   </div>-->
+
+                  <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
